@@ -1,0 +1,41 @@
+[2025-05-19 23:08:26,681] 1026 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"
+[2025-05-19 23:08:28,316] 1026 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"
+[2025-05-19 23:08:29,987] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-19 23:08:29,997] 107 dagshub - INFO - Accessing as Asrith-Ladi
+[2025-05-19 23:08:31,725] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Asrith-Ladi/networksecurity "HTTP/1.1 200 OK"
+[2025-05-19 23:08:33,321] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-19 23:08:33,326] 107 dagshub - INFO - Initialized MLflow to track repo "Asrith-Ladi/networksecurity"
+[2025-05-19 23:08:33,326] 107 dagshub - INFO - Repository Asrith-Ladi/networksecurity initialized!
+[2025-05-19 23:08:33,326] 20 root - INFO - Initiate the data ingestion
+[2025-05-19 23:08:37,631] 69 root - INFO - Performed train test split on the dataframe
+[2025-05-19 23:08:37,631] 71 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-05-19 23:08:37,632] 79 root - INFO - Exporting train and test file path.
+[2025-05-19 23:08:37,769] 88 root - INFO - Exported train and test file path.
+[2025-05-19 23:08:37,769] 22 root - INFO - Data Initiation Completed
+[2025-05-19 23:08:37,777] 26 root - INFO - Initiate the data Validation
+[2025-05-19 23:08:37,901] 32 root - INFO - Required number of columns:2
+[2025-05-19 23:08:37,902] 33 root - INFO - Data frame has columns:31
+[2025-05-19 23:08:37,902] 32 root - INFO - Required number of columns:2
+[2025-05-19 23:08:37,902] 33 root - INFO - Data frame has columns:31
+[2025-05-19 23:08:38,250] 28 root - INFO - data Validation Completed
+[2025-05-19 23:08:38,251] 31 root - INFO - data Transformation started
+[2025-05-19 23:08:38,251] 60 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-05-19 23:08:38,251] 62 root - INFO - Starting data transformation
+[2025-05-19 23:08:38,315] 49 root - INFO - Entered get_data_transformer_object method of Transformation class
+[2025-05-19 23:08:38,315] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-05-19 23:08:38,362] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-05-19 23:08:38,368] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-05-19 23:08:38,368] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-05-19 23:08:38,383] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-05-19 23:08:38,383] 35 root - INFO - data Transformation completed
+[2025-05-19 23:08:38,383] 37 root - INFO - Model Training sstared
+[2025-05-19 23:26:12,030] 874 urllib3.connectionpool - WARNING - Retrying (Retry(total=6, connect=7, read=7, redirect=7, status=7)) after connection broken by 'SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2406)')': /Asrith-Ladi/networksecurity.mlflow/api/2.0/mlflow-artifacts/artifacts/8475a28076ca45e18674966c81507395/decd5a4e370e4894acd1e48cc8806e69/artifacts/model/model.pkl
+[2025-05-19 23:26:16,593] 874 urllib3.connectionpool - WARNING - Retrying (Retry(total=5, connect=6, read=7, redirect=7, status=7)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002975EF399D0>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /Asrith-Ladi/networksecurity.mlflow/api/2.0/mlflow-artifacts/artifacts/8475a28076ca45e18674966c81507395/decd5a4e370e4894acd1e48cc8806e69/artifacts/model/model.pkl
+[2025-05-19 23:30:19,963] 874 urllib3.connectionpool - WARNING - Retrying (Retry(total=4, connect=5, read=7, redirect=7, status=7)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002976AE85880>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /Asrith-Ladi/networksecurity.mlflow/api/2.0/mlflow-artifacts/artifacts/8475a28076ca45e18674966c81507395/decd5a4e370e4894acd1e48cc8806e69/artifacts/model/model.pkl
+[2025-05-20 11:25:43,212] 874 urllib3.connectionpool - WARNING - Retrying (Retry(total=3, connect=4, read=7, redirect=7, status=7)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002975E0DBB90>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /Asrith-Ladi/networksecurity.mlflow/api/2.0/mlflow-artifacts/artifacts/8475a28076ca45e18674966c81507395/decd5a4e370e4894acd1e48cc8806e69/artifacts/model/model.pkl
+[2025-05-20 11:26:06,025] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-05-20 11:26:06,025] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-05-20 11:26:06,025] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-05-20 11:26:06,086] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-05-20 11:26:06,086] 120 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\05_19_2025_23_07_46\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9910195813639433, precision_score=0.989549622437972, recall_score=0.9924939139843116), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9888918992143051, precision_score=0.9867531765341985, recall_score=0.991039913114309))
+[2025-05-20 11:26:06,086] 42 root - INFO - Model Training artifact created

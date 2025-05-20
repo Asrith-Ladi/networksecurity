@@ -1,0 +1,6 @@
+[2025-05-20 18:39:35,152] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-20 18:39:35,167] 107 dagshub - INFO - Accessing as Asrith-Ladi
+[2025-05-20 18:39:36,082] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Asrith-Ladi/networksecurity "HTTP/1.1 200 OK"
+[2025-05-20 18:39:36,920] 1026 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-20 18:39:36,922] 107 dagshub - INFO - Initialized MLflow to track repo "Asrith-Ladi/networksecurity"
+[2025-05-20 18:39:36,922] 107 dagshub - INFO - Repository Asrith-Ladi/networksecurity initialized!
